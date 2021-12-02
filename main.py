@@ -7,7 +7,7 @@ fc.config_page()
 st.title('Predicción de ataques de apoplejía')
 
 # menu
-menu = st.sidebar.selectbox('Datos COVID-19', ['Portada', 'Datos', 'Modelos', 'Predecir'])
+menu = st.sidebar.selectbox('Apoplejía', ['Portada', 'Datos', 'Modelos', 'Predecir', 'Conclusiones'])
 
 if menu == 'Portada':
     fc.portada()
@@ -18,5 +18,8 @@ elif menu == 'Datos':
 elif menu == 'Modelos':
     fc.modelos()
 
-else:
+elif menu == 'Predecir':
     fc.predecir()
+
+else:
+    fc.conclusiones()
